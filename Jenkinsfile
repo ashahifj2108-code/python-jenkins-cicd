@@ -4,8 +4,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/sonam-niit/python-jenkins-cicd.git'
+                // git branch: 'main',
+                //     url: 'https://github.com/sonam-niit/python-jenkins-cicd.git'
+                checkout scm
             }
         }
 
